@@ -91,20 +91,22 @@ public class Fechas {
 	    	      System.out.print("Persona 2 es mayor  ");
 	    	  else
 	    	  if(ano2>ano1)   
-	    	      System.out.print("Persona 1 es mayor  ");     
+	    	      System.out.print("Persona 1 es mayor  "); 
+	    	  else
 	    	  		if(mes1>mes2)
-		    	      System.out.print("Persona 2 es mayor  ");
+	    	  	      System.out.print("Persona 2 es mayor  ");
 	      			if(mes2>mes1)   
 		    	      System.out.print("Persona 1 es mayor  ");
 	      			if(dia1>dia2)
 		    	      System.out.print("Persona 2 es mayor  ");
+	      			else
 	      			if(dia2>dia1)   
 		    	      System.out.print("Persona 1 es mayor  ");
 	      			
-	    	 
+ 	 
 }
 
-
+	
 	}
 
 
