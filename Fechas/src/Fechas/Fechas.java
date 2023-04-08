@@ -27,7 +27,8 @@ public class Fechas {
 	   		
 	  		    System.out.println("Ingrese Fecha en este formato 20/10/2016 Persona 1: ");
 	  		    fecha1=teclado.next();
-	  		   
+	  		   // Validando que el largo del string sea de 10 caracteres
+	  		    // y que las posiciones que no tiene / sean numeros y el otro sea /
 	 	       if (fecha1.length() == 10)
 	 	       	    if ((fecha1.substring(0,2)).matches("[0-9]*") & (fecha1.substring(2,3)).matches("/") & (fecha1.substring(3,5)).matches("[0-9]*") & (fecha1.substring(5,6)).matches("/") & (fecha1.substring(6,10)).matches("[0-9]*")) {
 	 	    	        correcto=true;
@@ -40,7 +41,7 @@ public class Fechas {
 	 	    	    }while(correcto==false);
 	            
 	      	   
-	    // extrae de string el dia
+	    // se guarda en variables numericos cada substring
  	       String sSubCadena = fecha1.substring(0,2);
  	       dia1 = Integer.parseInt(sSubCadena); 
  	      
@@ -80,6 +81,7 @@ public class Fechas {
 	       String sSubCadena5 = fecha2.substring(6,10);
 	       ano2 = Integer.parseInt(sSubCadena5); 
 	       
+	      // se comparan los años, luego meses y dias
 	       
 	      if(ano1==ano2 &&	mes1==mes2 && dia1==dia2)
 	    	  	System.out.print("Tienen la misma edad.");
@@ -101,9 +103,7 @@ public class Fechas {
 	    	 
 }
 
-//	private static int isNumeric(String sSubCadena1) {
-//		 TODO Auto-generated method stub
-//		return 0;
+
 	}
 
 
