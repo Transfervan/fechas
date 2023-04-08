@@ -95,8 +95,10 @@ public class Fechas {
 	    	  else
 	    	  		if(mes1>mes2)
 	    	  	      System.out.print("Persona 2 es mayor  ");
-	      			if(mes2>mes1)   
+	    	  		else
+	    	  			if(mes2>mes1)   
 		    	      System.out.print("Persona 1 es mayor  ");
+	      			else
 	      			if(dia1>dia2)
 		    	      System.out.print("Persona 2 es mayor  ");
 	      			else
