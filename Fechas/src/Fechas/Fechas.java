@@ -23,14 +23,15 @@ public class Fechas {
 		 int ano2 = 0;
 		 		 
 	       do{
-	    	    System.out.println("Ingresar fechas de nacimiento de dos pesonas");
+	    	    System.out.println("Ingresar fechas de nacimiento de dos personas");
 	   		
 	  		    System.out.println("Ingrese Fecha en este formato 20/10/2016 Persona 1: ");
 	  		    fecha1=teclado.next();
 	  		   // Validando que el largo del string sea de 10 caracteres
-	  		    // y que las posiciones que no tiene / sean numeros y el otro sea /
+	  		    // y que las posiciones que no tiene / sean numeros y el tenga /
+	  		    // que dias sean mayores que 0 y menosres que 32 y meses mayores que cero y menosres de 13
 	 	       if (fecha1.length() == 10)
-	 	       	    if ((fecha1.substring(0,2)).matches("[0-9]*") & (fecha1.substring(2,3)).matches("/") & (fecha1.substring(3,5)).matches("[0-9]*") & (fecha1.substring(5,6)).matches("/") & (fecha1.substring(6,10)).matches("[0-9]*")) {
+	 	       	    if ((fecha1.substring(0,2)).matches("[0-9]*") & Integer.parseInt(fecha1.substring(0,2)) < 32 & Integer.parseInt(fecha1.substring(0,2)) > 0 & (fecha1.substring(2,3)).matches("/") & (fecha1.substring(3,5)).matches("[0-9]*") & Integer.parseInt(fecha1.substring(3,5)) > 0 & Integer.parseInt(fecha1.substring(3,5)) < 13 & (fecha1.substring(5,6)).matches("/") & (fecha1.substring(6,10)).matches("[0-9]*")) {
 	 	    	        correcto=true;
 	 	    	        } else {
 	 	    	        correcto=false;
@@ -60,7 +61,7 @@ public class Fechas {
 	  		    fecha2=teclado1.next();
 	  		   
 	  		  if (fecha2.length() == 10)
-	 	       	    if ((fecha2.substring(0,2)).matches("[0-9]*") & (fecha2.substring(2,3)).matches("/") & (fecha2.substring(3,5)).matches("[0-9]*") & (fecha2.substring(5,6)).matches("/") & (fecha2.substring(6,10)).matches("[0-9]*")) {
+	 	       	    if ((fecha2.substring(0,2)).matches("[0-9]*") & Integer.parseInt(fecha2.substring(0,2)) < 32 & Integer.parseInt(fecha2.substring(0,2)) > 0 & (fecha2.substring(2,3)).matches("/") & (fecha2.substring(3,5)).matches("[0-9]*") & Integer.parseInt(fecha2.substring(3,5)) > 0 & Integer.parseInt(fecha2.substring(3,5)) < 13 & (fecha2.substring(5,6)).matches("/") & (fecha2.substring(6,10)).matches("[0-9]*")) {
 	 	    	        correcto2=true;
 	 	    	        } else {
 	 	    	        correcto2=false;
